@@ -1,0 +1,189 @@
+/* Set root variables */
+:root {
+  --heliotrope: #e866ec;
+  --darkblue: #13293d;
+  --seagreen: seagreen;
+  --white: white;
+  --eggshell: #f0ead6;
+}
+/* Set global styles */
+* {
+  box-sizing: border-box;
+  color: var(--darkblue);
+}
+/* Set font for entire body*/
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Header with Name and Navigation */
+header {
+  background-color: var(--seagreen);
+  padding: 20px;
+}
+
+header h1 {
+  color: var(--white);
+  display: inline-block;
+  font-size: 48px;
+}
+
+header nav {
+  float: right;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+/* Banner with Title and Subtitle against a background */
+.banner {
+  padding: 75px;
+  background-image: url("../images/tropical-background.jpeg");
+  background-size: cover;
+  background-position: top;
+}
+
+.banner h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 30px;
+  text-align: center;
+}
+/* Main section with content */
+main {
+  background-color: var(--eggshell);
+  padding: 50px;
+}
+
+main h1 {
+  font-size: 45px;
+  border-right: 8px solid;
+  padding-right: 20px;
+}
+/* About Me section */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+/* text */
+.about-me p {
+  width: 60%;
+  text-align: center;
+  padding-left: 20px;
+}
+/* applicant photo */
+.about-me img {
+  max-width: 250px;
+  max-height: 250px;
+  height: auto;
+  margin-left: 28px;
+  border-style: solid;
+  border-width: 8px;
+}
+/* Work section */
+.main-work {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -55px;
+  padding-left: 50px;
+}
+/* Set card styles */
+.card img {
+  border-style: solid;
+  border-width: 8px;
+}
+/* Hover function on cards */
+.card a img:hover{
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+/* First deployed application */
+.main-work h1 {
+  padding-left: 90px;
+}
+
+.large-card {
+  padding-left: 85px;
+}
+
+.large-card img {
+  width:900px;
+  height: auto;
+}
+
+.large-label {
+  font-size: 24px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--white);
+  position: relative;
+  bottom: 75px;
+}
+/* Other deployed applications */
+.other-work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 361px;
+}
+
+.small-card img {
+  width:445px;
+  height: auto;
+  margin-right: -178px;
+  margin-bottom: -26px;
+}
+
+.small-label {
+  position: relative;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--white);
+}
+/* Contact Me section */
+.contact-me {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.contact-me ul {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.contact-me ul li {
+  font-size: 24px;
+  display: inline;
+  margin-left: 132px;
+}
+/* Media Queries */
+@media screen and (min-width: 1800px) {
+  .large-card img {
+    width: 1347px;
+  }
+
+  .small-card img {
+    width: 666.5px;
+    margin-right: -175px;
+  }
+
+  .contact-me ul li {
+    margin-left: 248px;
+  }
+}
