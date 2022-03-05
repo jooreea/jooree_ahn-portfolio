@@ -1,4 +1,3 @@
-/* Set root variables */
 :root {
   --heliotrope: #e866ec;
   --darkblue: #13293d;
@@ -6,19 +5,18 @@
   --white: white;
   --eggshell: #f0ead6;
 }
-/* Set global styles */
+
 * {
-  box-sizing: border-box;
   color: var(--darkblue);
 }
-/* Set font for entire body*/
+
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/* Header with Name and Navigation */
+
 header {
   background-color: var(--seagreen);
-  padding: 20px;
+  padding: 40px;
 }
 
 header h1 {
@@ -27,18 +25,18 @@ header h1 {
   font-size: 48px;
 }
 
-header nav {
+nav {
   float: right;
   font-size: 25px;
   padding-top: 20px;
   margin-right: 20px;
 }
 
-header nav ul {
+nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
   display: inline;
   margin-left: 25px;
 }
@@ -47,7 +45,7 @@ nav a {
   color: var(--white);
   text-decoration: none;
 }
-/* Banner with Title and Subtitle against a background */
+
 .banner {
   padding: 75px;
   background-image: url("../images/tropical-background.jpeg");
@@ -64,126 +62,92 @@ nav a {
   font-size: 30px;
   text-align: center;
 }
-/* Main section with content */
+
 main {
   background-color: var(--eggshell);
   padding: 50px;
 }
 
 main h1 {
-  font-size: 45px;
-  border-right: 8px solid;
-  padding-right: 20px;
+  font-size: 35px;
 }
-/* About Me section */
+
+main h1::after {
+  content: " | ";
+}
+
 .about-me {
   display: flex;
-  flex-direction: row;
-  padding: 50px;
+  flex-wrap: wrap;
 }
-/* text */
+
 .about-me p {
-  width: 60%;
-  text-align: center;
-  padding-left: 20px;
+  padding-left: 30px;
+  width: 802px;
 }
-/* applicant photo */
-.about-me img {
-  max-width: 250px;
-  max-height: 250px;
-  height: auto;
-  margin-left: 28px;
+
+img {
   border-style: solid;
-  border-width: 8px;
+  border-width: 4px;
+  border-color: var(--seagreen);
 }
-/* Work section */
+
 .main-work {
   display: flex;
-  flex-direction: row;
-  margin-bottom: -55px;
-  padding-left: 50px;
-}
-/* Set card styles */
-.card img {
-  border-style: solid;
-  border-width: 8px;
-}
-/* Hover function on cards */
-.card a img:hover{
-  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
-}
-/* First deployed application */
-.main-work h1 {
-  padding-left: 90px;
+  flex-wrap: wrap;
 }
 
-.large-card {
-  padding-left: 85px;
+.main-work img {
+  width: 1050px;
+  margin: 8px -7px 0px -4px;
 }
 
-.large-card img {
-  width:900px;
-  height: auto;
-}
-
-.large-label {
-  font-size: 24px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--white);
-  position: relative;
-  bottom: 75px;
-}
-/* Other deployed applications */
 .other-work {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 361px;
+  padding-left: 193px;
+}
+.other-work img {
+  width: 509px;
+  margin: -28px;
+  margin-bottom: -4px;
 }
 
-.small-card img {
-  width:445px;
-  height: auto;
-  margin-right: -178px;
-  margin-bottom: -26px;
-}
-
-.small-label {
-  position: relative;
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--white);
-}
-/* Contact Me section */
 .contact-me {
   display: flex;
   flex-direction: row;
-  padding: 50px;
 }
 
 .contact-me ul {
   list-style-type: none;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-left: 170px;
 }
 
 .contact-me ul li {
   font-size: 24px;
   display: inline;
-  margin-left: 132px;
+  margin: 30px;
 }
-/* Media Queries */
+
+.card a img:hover{
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
 @media screen and (min-width: 1800px) {
-  .large-card img {
+  .about-me p {
+    width: 1096px;
+  }
+
+  .main-work img {
     width: 1347px;
   }
 
-  .small-card img {
-    width: 666.5px;
-    margin-right: -175px;
+  .other-work img {
+    width: 658px
   }
 
   .contact-me ul li {
-    margin-left: 248px;
+    margin: 80px;
   }
 }
