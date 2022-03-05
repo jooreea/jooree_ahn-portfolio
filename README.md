@@ -14,3 +14,4 @@ An employer wants to view a potential employee's deployed portfolio of work samp
 ![portfolio demo](./assets/images/page-demo.png)
 
 ## Link to Deployed Application
+https://jooreea.github.io/jooree_ahn-portfolio/
