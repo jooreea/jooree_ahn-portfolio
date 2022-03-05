@@ -78,12 +78,16 @@ main h1::after {
 
 .about-me {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .about-me p {
   padding-left: 30px;
   width: 802px;
+}
+
+.about-me img {
+ width: 240px;
+ height: 295px;
 }
 
 img {
@@ -94,7 +98,6 @@ img {
 
 .main-work {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .main-work img {
